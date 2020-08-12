@@ -1,0 +1,22 @@
+{
+  "name": "crabunion-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megablueX/crab-union-bot.git"
+  },
+  "author": "SirH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megablueX/crab-union-bot/issues"
+  },
+  "homepage": "https://github.com/megablueX/crab-union-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}

@@ -1,2 +1,2 @@
-#The Crab Union Info Bot
-##It... gives info! :D
+# The Crab Union Info Bot
+## It... gives info! :D

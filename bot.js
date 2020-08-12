@@ -1,4 +1,4 @@
-﻿const { Client } = require('discord.js'), client = new Client(), config = require('./auth.json');
+﻿const { Client } = require('discord.js'), client = new Client(), config = require('./config.json');
 client.login(config.token);
 const commands = {}, aliases = {}, commandNames = [], commandUsage = [], commandDescription = []; // { "command": require("that_command") }, { "alias": "command" }
 module.exports = {

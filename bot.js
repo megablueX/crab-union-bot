@@ -23,6 +23,24 @@ client.on('ready', () => {
 	console.log("The Info bot is active.");
 });
 
+var myActivity = setInterval(ShowMyActivity, 10000);
+
+async function ShowMyActivity() {
+	var robloxActivity;
+	var me = client.users.cache.get("689404243756843155");
+	if (me == undefined) {
+		return;
+	}
+	if (me.presence.activities.length <= 0) {
+		robloxActivity = "Nothing at the moment";
+	} else if (me.presence.activities[0].name != "Custom Status") {
+		robloxActivity = me.presence.activities[0].name;
+	} else {
+		robloxActivity = "Status unavailable currently";
+	}
+	client.user.setActivity(`s!help in ${client.guilds.cache.size} servers | roblox no sound: ${robloxActivity}`, { type: "PLAYING" });
+}
+
 client.on('messages', () => {
 	if (message.author.id == botID) return;
 	const prefix = config.prefix;

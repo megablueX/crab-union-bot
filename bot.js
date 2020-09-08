@@ -53,7 +53,7 @@ client.on('message', async (message) => {
 
 		const commandFile = commands[command]
 		if (commandFile) {
-			const args = content.split(" ").shift();
+			const args = content.match(/\"[^"]+\"|[^ ]+/g) || []).map(argument => argument.startsWith("\"") && argument.endsWith("\"") ? argument.slice(1).slice(0, -1) : argument);
 			if (!commandFile.checkArgs(args, content)) return message.channel.send(`❌ Invalid arguments! Usage is \`${prefix}${command}${Object.keys(commandFile.usage).map(a => " " + a).join("")}\`, for additional help, see \`${prefix}help\`.`)
 			commandFile.run(client, message, args, { content });
 		}

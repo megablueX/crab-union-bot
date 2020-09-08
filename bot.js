@@ -42,7 +42,7 @@ async function ShowMyActivity() {
 }
 
 client.on('message', async (message) => {
-	if (message.author.id == botID) return;
+	if (message.author.bot) return;
 	const prefix = config.prefix;
 	var content = message.content;
 	if (message.content.startsWith(prefix) || message.content.match(`^<@!?${client.user.id}> `)) {

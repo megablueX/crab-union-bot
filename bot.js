@@ -41,7 +41,7 @@ async function ShowMyActivity() {
 	client.user.setActivity(`s!help in ${client.guilds.cache.size} servers | roblox no sound: ${robloxActivity}`, { type: "PLAYING" });
 }
 
-client.on('messages', async (message) => {
+client.on('message', async (message) => {
 	if (message.author.id == botID) return;
 	const prefix = config.prefix;
 	var content = message.content;

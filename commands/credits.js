@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 
 module.exports = {
-    description: "lists all groups",
+    description: "lists all of the people who help make this bot",
     usage: {
         "": ""
     },

@@ -9,7 +9,6 @@ module.exports = {
 }
 
 module.exports.run = async (client, message, args) => {
-    message.reply(" ```. https://www.roblox.com/groups/5540783/megabluess-blue-army#!/about"
-``` )
+    message.reply(" ```1. https://www.roblox.com/groups/5540783/megabluess-blue-army#!/about"``` )
 
 }

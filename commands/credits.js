@@ -9,5 +9,9 @@ module.exports = {
 }
 
 module.exports.run = async (client, message, args) => {
-    message.reply("SirH scripted bot. No sound is the owner of bot")
+    message.reply(" ")
+  var embed = new MessageEmbed() // <-- use this for sending an embedded message
+  .setTitle("This is a list of all the people who helped script bot")
+  .setDescription("SirH scripted bot. No sound is the owner of bot");
+message.channel.send(embed);
 }

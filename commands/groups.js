@@ -6,9 +6,8 @@ module.exports = {
     },
     checkArgs: (args) => args.length >= 0
 }
-
 module.exports.run = async (client, message, args) => {
-    message.reply("")
+    message.reply(" ")
 var embed = new MessageEmbed()
   .setTitle("Here are our groups.")
   .setDescription("join our groups!");

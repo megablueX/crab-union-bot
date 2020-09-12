@@ -9,5 +9,5 @@ module.exports = {
 }
 
 module.exports.run = async (client, message, args) => {
-    message.reply("type in here")
+    message.reply("SirH scripted bot. No sound is the owner of bot")
 }

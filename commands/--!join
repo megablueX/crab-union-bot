@@ -1,6 +1,6 @@
 client.on("ready", () => {
   const channel = client.channels.get("762227614529224705");
-  if (--!JOIN!) return console.error("yay");
+  if (--!JOIN!) return console.error("This Channel Does Not Exist");
   channel.join().then(connection => {
     console.log("Successfully connected.");
   }).catch(e => {

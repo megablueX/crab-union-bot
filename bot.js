@@ -1,6 +1,6 @@
 const { Client } = require('discord.js');
 const token = 'NzQyNjYyMTQwMDc4MzI1ODUx.XzJYBA.FHxthr7B74nvY-IAFpVTBrs-uPY';
-const ytdl = require('ytdl-core');
+//const ytdl = require('ytdl-core');
 const config = require('./config.json');
 const fs = require('fs');
 
@@ -72,7 +72,7 @@ client.on('message', async (message) => {
 	if (!message.content.startsWith(prefix)) return;
 
 	const serverQueue = queue.get(message.guild.id);
-	var cmd = message.content.split(' ')[0].replace(prefix, '');
+	/*var cmd = message.content.split(' ')[0].replace(prefix, '');
 	switch(cmd)
 	{
 		case 'play':
@@ -84,7 +84,7 @@ client.on('message', async (message) => {
 		case 'stop':
 		return stop(message, serverQueue);
 		default:
-	}
+	}*/
 	var content = message.content;
 	if (message.content.startsWith(prefix) || message.content.match(`^<@!?${client.user.id}> `)) {
 		let content = message.content.split(' ');

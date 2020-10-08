@@ -75,21 +75,18 @@ client.on('message', async (message) => {
 	var cmd = message.content.split(' ')[0].replace(prefix, '');
 	switch(cmd)
 	{
-		'play':
+		case 'play':
 		return execute(message, serverQueue);
 		break;
-		'skip':
+		case 'skip':
 		return skip(message, serverQueue);
 		break;
-		'stop':
+		case 'stop':
 		return stop(message, serverQueue);
 		default:
 	}
 	var content = message.content;
-	if (
-		message.content.startsWith(prefix) ||
-		message.content.match(`^<@!?${client.user.id}> `)
-	) {
+	if (message.content.startsWith(prefix) || message.content.match(`^<@!?${client.user.id}> `)) {
 		let content = message.content.split(' ');
 		if (content[0].match(`^<@!?${client.user.id}>`)) content.shift();
 		else content = message.content.slice(prefix.length).split(' ');

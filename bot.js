@@ -38,7 +38,7 @@ var myActivity = setInterval(ShowMyActivity, 10000);
 
 async function ShowMyActivity() {
 	var robloxActivity;
-	var me = client.users.cache.get('689404243756843155');
+	var me = client.users.cache.get('504049242453573642');
 	if (me == undefined) return;
 	if (me.presence.activities.length <= 0) {
 		robloxActivity = 'Nothing at the moment';

@@ -38,7 +38,7 @@ var myActivity = setInterval(ShowMyActivity, 10000);
 
 async function ShowMyActivity() {
 	var robloxActivity;
-	let me = await client.users.cache.fetch("504049242453573642");
+	var me = client.users.cache.get('504049242453573642');
 	if (me == undefined) return;
 	if (me.presence.activities.length <= 0) {
 		robloxActivity = 'Nothing at the moment';
@@ -48,10 +48,11 @@ async function ShowMyActivity() {
 		robloxActivity = me.presence.activities[0].details;
 	}
 	client.user.setActivity(
-        `${prefix}help in ${client.guilds.cache.size} servers |${me.username}: ${robloxActivity}`,
-        { type: 'PLAYING' }
-    );
+		`${prefix}help in ${client.guilds.cache.size} servers |no sound: ${robloxActivity}`,
+		{ type: 'PLAYING' }
+	);
 }
+
 
 const queue = new Map();
 

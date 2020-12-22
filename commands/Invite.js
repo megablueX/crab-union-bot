@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 
 module.exports = {
-    description: "lists current events",
+    description: "instructions to invite this bot",
     usage: {
         "": ""
     },

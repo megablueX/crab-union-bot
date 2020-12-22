@@ -48,7 +48,7 @@ async function ShowMyActivity() {
 		robloxActivity = me.presence.activities[0].details;
 	}
 	client.user.setActivity(
-        `${prefix}help in ${client.guilds.cache.size} servers |${me.author.username}: ${robloxActivity}`,
+        `${prefix}help in ${client.guilds.cache.size} servers |${me.username}: ${robloxActivity}`,
         { type: 'PLAYING' }
     );
 }

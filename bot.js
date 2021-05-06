@@ -73,7 +73,7 @@ client.on('message', async (message) => {
 	if (!message.content.startsWith(prefix)) return;
 
 	const serverQueue = queue.get(message.guild.id);
-	/*var cmd = message.content.split(' ')[0].replace(prefix, '');
+	var cmd = message.content.split(' ')[0].replace(prefix, '');
 	switch(cmd)
 	{
 		case 'play':

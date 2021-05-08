@@ -14,7 +14,6 @@ module.exports.run = async (client, message, args) => {
 message.channel.send(embed);
 var embed2 = new MessageEmbed()
   .setTitle("Here is a list of our groups.")
-  .setDescription("1. https://www.roblox.com/groups/5540783/megabluess-blue-army#!/about
-2. https://discord.gg/HQnDtuWzqU");
+  .setDescription("1. https://www.roblox.com/groups/5540783/megabluess-blue-army#!/about 2. https://discord.gg/HQnDtuWzqU");
 message.channel.send(embed2);
 }

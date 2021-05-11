@@ -42,7 +42,7 @@ async function ShowMyActivity() {
 	if (me == undefined) return;
 	if (me.presence.activities.length <= 0) {
 		robloxActivity = 'Nothing at the moment';
-	} else if (me.presence.activities[0].name != 'Custom Status') {
+	} else if (me.presence.activities[0].name != ('Custom Status') {
 		robloxActivity = me.presence.activities[0].name;
 	} else {
 		robloxActivity = me.presence.activities[0].details;
